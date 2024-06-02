@@ -1,13 +1,6 @@
-const navbarNav = document.querySelector(".navbar-nav");
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.querySelector('.navbar-nav');
 
-document.querySelector("#hamburger-menu").onclick = () => {
-  navbarNav.classList.toggle("active");
-};
-
-const hamburger = document.querySelector("#hamburger-menu");
-
-document.addEventListener("click", function (e) {
-  if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
-    navbarNav.classList.remove("active");
-  }
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
 });
