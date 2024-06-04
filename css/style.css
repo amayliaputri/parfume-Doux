@@ -76,6 +76,8 @@ body {
 .navbar .navbar-extra  {
   color: #d37676;
   margin: 0 0.5rem;
+  display: flex;
+  gap: 15px;
 }
 
 .navbar .navbar-extra a:hover {
